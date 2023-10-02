@@ -58,7 +58,7 @@ func resourceJobTemplate() *schema.Resource {
 			},
 			"inventory_id": {
 				Type:     schema.TypeString,
-				Required: true,
+				Optional: true,
 			},
 			"project_id": {
 				Type:     schema.TypeInt,
@@ -201,6 +201,9 @@ func resourceJobTemplate() *schema.Resource {
 				Optional: true,
 				Default:  "",
 			},
+		},
+		Importer: &schema.ResourceImporter{
+			StateContext: schema.ImportStatePassthroughContext,
 		},
 	}
 }
