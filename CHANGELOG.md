@@ -1,3 +1,10 @@
+# [0.22.0](https://github.com/cwilloughby-bw/terraform-provider-awx/compare/v0.21.0...v0.22.0) (2023-10-13)
+
+
+### Features
+
+* bump checkout action to v4 ([80cf5bf](https://github.com/cwilloughby-bw/terraform-provider-awx/commit/80cf5bf2b8789373d507d9c98166efa72a46a89e))
+
 # [0.21.0](https://github.com/denouche/terraform-provider-awx/compare/v0.20.0...v0.21.0) (2023-04-17)
 
 
