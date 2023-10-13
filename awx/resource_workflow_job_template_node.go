@@ -139,7 +139,7 @@ func resourceWorkflowJobTemplateNodeCreate(ctx context.Context, d *schema.Resour
 
 	result, err := awxService.CreateWorkflowJobTemplateNode(map[string]interface{}{
 		"extra_data":            d.Get("extra_data").(string),
-		"inventory":             d.Get("inventory_id").(int),
+		"inventory":             (func(i interface{}) string { v,_ := i.(string); return v })(d.Get("inventory_id")),
 		"scm_branch":            d.Get("scm_branch").(string),
 		"skip_tags":             d.Get("skip_tags").(string),
 		"job_type":              d.Get("job_type").(string),
@@ -187,7 +187,7 @@ func resourceWorkflowJobTemplateNodeUpdate(ctx context.Context, d *schema.Resour
 
 	_, err = awxService.UpdateWorkflowJobTemplateNode(id, map[string]interface{}{
 		"extra_data":            d.Get("extra_data").(string),
-		"inventory":             d.Get("inventory_id").(int),
+		"inventory":             (func(i interface{}) string { v,_ := i.(string); return v })(d.Get("inventory_id")),
 		"scm_branch":            d.Get("scm_branch").(string),
 		"skip_tags":             d.Get("skip_tags").(string),
 		"job_type":              d.Get("job_type").(string),

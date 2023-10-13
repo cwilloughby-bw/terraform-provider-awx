@@ -58,7 +58,7 @@ func resourceSchedule() *schema.Resource {
 				Default:  true,
 			},
 			"inventory": {
-				Type:     schema.TypeInt,
+				Type:     schema.TypeString,
 				Optional: true,
 			},
 			"extra_data": {
@@ -82,7 +82,7 @@ func resourceScheduleCreate(ctx context.Context, d *schema.ResourceData, m inter
 		"unified_job_template": d.Get("unified_job_template_id").(int),
 		"description":          d.Get("description").(string),
 		"enabled":              d.Get("enabled").(bool),
-		"inventory":            d.Get("inventory").(int),
+		"inventory":            AtoipOr(d.Get("inventory").(string), nil),
 		"extra_data":           unmarshalYaml(d.Get("extra_data").(string)),
 	}, map[string]string{})
 	if err != nil {
