@@ -45,7 +45,6 @@ jobs:
             @semantic-release/git@9.0.1
             @semantic-release/github@7.2.3
         env:
-          GIT_CREDENTIALS: git:${{ secrets.PAT }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up Go
