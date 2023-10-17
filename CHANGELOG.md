@@ -1,3 +1,10 @@
+# [0.24.0](https://github.com/cwilloughby-bw/terraform-provider-awx/compare/v0.23.0...v0.24.0) (2023-10-17)
+
+
+### Features
+
+* fix go.mod module name ([adc02e6](https://github.com/cwilloughby-bw/terraform-provider-awx/commit/adc02e6b90b0c989946ff2aa455895ff110f3ae9))
+
 # [0.23.0](https://github.com/cwilloughby-bw/terraform-provider-awx/compare/v0.22.0...v0.23.0) (2023-10-17)
 
 
