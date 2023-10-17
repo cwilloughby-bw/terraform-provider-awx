@@ -1,3 +1,10 @@
+# [0.23.0](https://github.com/cwilloughby-bw/terraform-provider-awx/compare/v0.22.0...v0.23.0) (2023-10-17)
+
+
+### Features
+
+* fix main.go repo imports ([ddae4cc](https://github.com/cwilloughby-bw/terraform-provider-awx/commit/ddae4cc41f4f77239f784d7d0b7c39dbff66bb1c))
+
 # [0.22.0](https://github.com/cwilloughby-bw/terraform-provider-awx/compare/v0.21.0...v0.22.0) (2023-10-16)
 
 
