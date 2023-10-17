@@ -1,4 +1,4 @@
-module github.com/denouche/terraform-provider-awx
+module github.com/cwilloughby-bw/terraform-provider-awx
 
 go 1.14
 
